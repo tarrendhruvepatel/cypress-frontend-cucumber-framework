@@ -1,0 +1,23 @@
+{
+  "name": "cypress-frontend-cucumber-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "testFiles": "**/*.feature",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "author": "Tarren Dhruve Patel",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "cypress": "^12.16.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-iframe": "^1.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e"
+  }
+}
